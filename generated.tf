@@ -21,5 +21,5 @@ resource "aws_security_group" "ingress" {
   revoke_rules_on_delete = null
   tags                   = {}
   tags_all               = {}
-  vpc_id                 = "vpc-04e606c2855ebf1ea"
+  vpc_id                 = module.main.vpc_id
 }
